@@ -1,0 +1,59 @@
+:root {
+  font-size: 62.5%;
+
+  /* family */
+  --ff-raleway: "Raleway", system-ui, sans-serif;
+
+  /* size */
+  --fs-title-lg: 2.8rem;
+  --fs-subtitle: 1.6rem;
+  --fs-title-sm: 2.4rem;
+  --fs-body-lg: 1.4rem;
+  --fs-body-md: 1.4rem;
+
+  /* weight */
+  --regular: 400;
+  --medium: 500;
+  --bold: 700;
+
+  /* line-height */
+  --line-base: 140%;
+  --line-200: 200%;
+}
+
+body {
+  color: var(--text-body);
+  font: var(--regular) var(--fs-body-md) / var(--line-base) var(--ff-raleway);
+}
+
+.title-lg {
+  color: var(--text-title);
+  font: var(--bold) var(--fs-title-lg) / var(--line-base) var(--ff-raleway);
+}
+
+.subtitle {
+  font: var(--medium) var(--fs-subtitle) / var(--line-base) var(--ff-raleway);
+}
+
+.title-sm {
+  font: var(--bold) var(--fs-title-sm) / var(--line-base) var(--ff-raleway);
+}
+
+.body-lg {
+  font: var(--regular) var(--fs-body-lg) / var(--line-base) var(--ff-raleway);
+}
+
+.text-button {
+  color: var(--text-title);
+  font: var(--bold) 1.4rem / var(--line-base) var(--ff-raleway);
+}
+
+@media (min-width: 1440px) {
+  :root {
+    --fs-title-lg: 4.8rem;
+    --fs-subtitle: 3.2rem;
+    --fs-title-sm: 3.2rem;
+    --fs-body-lg: 2rem;
+    --fs-body-md: 1.6rem;
+  }
+}
