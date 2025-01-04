@@ -3,12 +3,6 @@ a {
   text-decoration: none;
 }
 
-button {
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
 /* social links */
 & a.social {
   display: grid;
@@ -41,7 +35,7 @@ button {
 }
 
 /* buttons */
-button {
+a.btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -78,18 +72,18 @@ button {
   }
 }
 
-button.btn-secondary {
-  background-color: var(--blue-dark);
-
-  &::before {
-    background-color: var(--blue-mid);
-  }
-}
-
-button.btn-primary {
+a.btn-primary {
   background-color: var(--pink-dark);
 
   &::before {
     background-color: var(--pink-base);
+  }
+}
+
+a.btn-secondary {
+  background-color: var(--blue-dark);
+
+  &::before {
+    background-color: var(--blue-mid);
   }
 }

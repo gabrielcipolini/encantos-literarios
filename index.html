@@ -16,25 +16,127 @@
     <title>Encantos Literários</title>
   </head>
   <body>
-    <div class="components">
+    <div id="app" class="container">
+      <section id="hero">
+        <div class="hero-content">
+          <nav class="main-nav">
+            <div class="logo">
+              <img
+                src="src/assets/logo-mobile.svg"
+                alt="Logotipo Encantos Literários"
+                class="mobile-only"
+              />
+
+              <img
+                src="src/assets/logo-desktop.svg"
+                alt="Logotipo Encantos Literários"
+                class="desktop-only"
+              />
+            </div>
+
+            <a href="#plans" data-label="Assinar" class="btn btn-primary"></a>
+          </nav>
+
+          <header>
+            <h1 class="title-lg">
+              Desperte a sua imaginação e explore novos mundos
+            </h1>
+
+            <p class="body-lg">
+              Junte-se ao clube de assinatura Encantos Literários e descubra
+              maravilhas e aventuras a cada página
+            </p>
+          </header>
+
+          <img
+            src="src/assets/img/hero/hero-bg-max.png"
+            alt=""
+            class="bg-hero"
+          />
+        </div>
+
+        <section class="section-subtitle">
+          <i class="i-decorative magic-book"></i>
+
+          <h2 class="subtitle desktop-only">
+            <span>Receba todo mês um <strong> livro surpresa </strong> </span>
+            <span
+              >do seu tema favorito, acompanhado de
+              <strong> brindes exclusivos </strong>
+            </span>
+            <span>
+              que tornarão a sua experiência literária
+              <strong> encantadora </strong>
+            </span>
+          </h2>
+
+          <h2 class="subtitle mobile-only">
+            Receba todo mês um livro surpresa do seu tema favorito, acompanhado
+            de brindes exclusivos que tornarão a sua experiência literária ainda
+            mais encantadora.
+          </h2>
+
+          <i class="i-decorative ouija"></i>
+          <i class="i-decorative crystal-cake"></i>
+        </section>
+      </section>
+
+      <section id="showcase">
+        <header>
+          <h2 class="title-sm">
+            <i class="i-star"></i>
+            Conheça o kit mensal
+            <i class="i-star"></i>
+          </h2>
+
+          <p>Recebe uma caixa surpresa todos os meses</p>
+        </header>
+
+        <div class="book-kit"></div>
+      </section>
+
+      <section id="plans">
+        <header>
+          <h2>Assinatura Encantos Literários</h2>
+        </header>
+
+        <div class="pricing-plans"></div>
+      </section>
+
+      <footer>
+        <div>
+          <div class="logo-footer">
+            <img src="" alt="" />
+          </div>
+          <div class="social-links"></div>
+        </div>
+
+        <ul class="quick-links">
+          <li>
+            <h3>Categoria 1</h3>
+            <ul>
+              <li>Item 1</li>
+              <li>Item 2</li>
+            </ul>
+          </li>
+
+          <li>
+            <h3>Categoria 2</h3>
+            <ul>
+              <li>Item 3</li>
+              <li>Item 4</li>
+            </ul>
+          </li>
+        </ul>
+      </footer>
+    </div>
+
+    <div class="components" style="margin-top: 800px">
       <div class="quick-links">
         <a href="#">Kits passados</a>
       </div>
 
-      <button
-        data-label="Assinar mensal"
-        class="btn-secondary text-button"
-      ></button>
-
-      <button
-        data-label="Assinar semestral"
-        class="btn-primary text-button"
-      ></button>
-
-      <button
-        data-label="Assinar anual"
-        class="btn-secondary text-button"
-      ></button>
+      <a href="#plans" data-label="Assinar" class="btn btn-secondary"></a>
 
       <div class="social-link">
         <a href="#" target="_blank" aria-label="instagram" class="social">

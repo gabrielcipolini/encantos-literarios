@@ -38,7 +38,30 @@
 }
 
 body {
-  background: url(../assets/img/blur.svg) no-repeat top / cover;
+  background: var(--shape-background) url(../assets/img/bg-blur.svg) no-repeat
+    top / cover;
+}
 
-  background-color: var(--shape-background);
+.container {
+  max-width: 37.5rem;
+  margin-inline: auto;
+}
+
+.desktop-only {
+  display: none;
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 256rem;
+    margin-inline: auto;
+  }
+
+  .desktop-only {
+    display: initial;
+  }
+
+  .mobile-only {
+    display: none;
+  }
 }

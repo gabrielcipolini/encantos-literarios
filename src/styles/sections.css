@@ -1,0 +1,253 @@
+#hero {
+  .hero-content {
+    padding-top: 2rem;
+    padding-bottom: 22.5rem;
+
+    position: relative;
+
+    & .main-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      margin-inline: 2rem;
+
+      & a[data-label="Assinar"] {
+        max-width: 8.9rem;
+      }
+    }
+
+    & header {
+      display: grid;
+      gap: 1.6rem;
+      margin: 4.8rem 2rem 0;
+      text-align: center;
+    }
+
+    & .bg-hero {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+
+      position: absolute;
+      top: 0;
+      z-index: -1;
+    }
+  }
+
+  .section-subtitle {
+    padding: 8.2rem 2rem;
+    text-align: center;
+
+    position: relative;
+
+    & .i-decorative {
+      width: 100%;
+      height: 100%;
+      max-width: 4rem;
+      max-height: 4rem;
+
+      position: absolute;
+    }
+
+    & .magic-book {
+      background: url(../assets/icons/hero/book-mobile.png) no-repeat top /
+        cover;
+
+      transform: translateY(-40px) translateX(71px);
+    }
+
+    & .ouija {
+      background: url(../assets/icons/hero/ouija-mobile.png) no-repeat top /
+        cover;
+
+      transform: translateY(-15px) translateX(-170px);
+    }
+
+    & .crystal-cake {
+      background: url(../assets/icons/hero/ball-mobile.png) no-repeat top /
+        cover;
+
+      transform: translateY(-5px) translateX(120px);
+    }
+  }
+}
+
+#showcase {
+  max-width: 144rem;
+  margin-inline: auto;
+
+  border: solid red;
+
+  & header {
+    text-align: center;
+
+    & i.i-star {
+      width: 3.2rem;
+      height: 3.2rem;
+
+      background: url(../assets/icons/star.svg);
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  #hero {
+    & .hero-content {
+      padding-top: 5.6rem;
+      padding-bottom: 56.6rem;
+
+      & .main-nav {
+        margin-inline: auto;
+        max-width: 112rem;
+      }
+
+      & header {
+        gap: 3.2rem;
+        justify-items: center;
+        margin: 16.4rem auto 0;
+        max-width: 65.6rem;
+
+        opacity: 0.2;
+        animation: fade-in 600ms 600ms both;
+
+        & p {
+          display: inline-block;
+          max-width: 56.8rem;
+        }
+      }
+
+      & .bg-hero {
+        opacity: 0.2;
+        animation: fade-in 600ms 200ms both;
+      }
+    }
+
+    .section-subtitle {
+      margin: 9.6rem auto 8rem;
+      max-width: 144rem;
+      padding: 11.4rem 3.2rem;
+
+      & h2.desktop-only {
+        display: inline-block;
+        max-width: 114rem;
+
+        & span {
+          opacity: 0.5;
+          transition: opacity 300ms;
+
+          & strong {
+            transition: color 300ms;
+          }
+        }
+      }
+
+      & strong {
+        font-weight: 700;
+      }
+
+      & .i-decorative {
+        max-width: 9rem;
+        max-height: 9rem;
+
+        transform: translate(0);
+        scale: 0;
+        opacity: 0;
+
+        transition: scale 600ms, opacity 100ms 600ms;
+      }
+
+      & .magic-book {
+        background: url(../assets/icons/hero/book.png) no-repeat top / cover;
+
+        top: 12px;
+        left: 650px;
+      }
+
+      & .ouija {
+        background: url(../assets/icons/hero/ouija.png) no-repeat top / cover;
+
+        top: 210px;
+        left: 150px;
+      }
+
+      & .crystal-cake {
+        background: url(../assets/icons/hero/ball.png) no-repeat top / cover;
+
+        top: 210px;
+        left: 1230px;
+      }
+
+      &:hover {
+        & .i-decorative {
+          scale: 1;
+          opacity: 1;
+
+          &:hover {
+            transform: rotate(12deg) scale(1.2);
+          }
+        }
+
+        & .magic-book {
+          transition: scale 300ms, transform 300ms;
+        }
+
+        & .ouija {
+          transition: scale 300ms 500ms, transform 300ms;
+        }
+
+        & .crystal-cake {
+          transition: scale 300ms 1s, transform 300ms;
+        }
+
+        & h2.desktop-only {
+          & span {
+            opacity: 1;
+
+            & strong {
+              color: var(--blue-light);
+            }
+          }
+
+          & span:nth-child(1) {
+            transition: opacity 300ms;
+
+            & strong {
+              transition: color 300ms;
+            }
+          }
+
+          & span:nth-child(2) {
+            transition: opacity 300ms 500ms;
+
+            & strong {
+              transition: color 300ms 500ms;
+            }
+          }
+
+          & span:nth-child(3) {
+            transition: opacity 300ms 1s;
+
+            & strong {
+              transition: color 300ms 1s;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 2200px) {
+  #hero {
+    & .hero-content {
+      padding-bottom: 75rem;
+    }
+  }
+}
+
+@keyframes fade-in {
+  to {
+    opacity: 1;
+  }
+}
