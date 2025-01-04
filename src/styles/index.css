@@ -1,4 +1,6 @@
 @import url(global.css);
 @import url(typography.css);
 @import url(components.css);
-@import url(sections.css);
+@import url(sections/hero.css);
+@import url(sections/showcase.css);
+@import url(sections/plans.css);

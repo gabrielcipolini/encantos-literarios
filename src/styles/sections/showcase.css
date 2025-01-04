@@ -1,0 +1,215 @@
+#showcase {
+  max-width: 144rem;
+  margin-inline: auto;
+
+  padding-block: 10.4rem 8.8rem;
+
+  & header {
+    margin: 0 3.2rem 6.4rem;
+
+    text-align: center;
+
+    & h2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.2rem;
+      margin-bottom: 0.8rem;
+
+      & .i-star {
+        width: 2rem;
+        height: 2rem;
+
+        background: url(../../assets/icons/star.svg) no-repeat top / cover;
+      }
+    }
+  }
+
+  & .book-kit {
+    position: relative;
+
+    & .book-showcase-image {
+      margin: 5.4rem auto 5.6rem 8.8rem;
+      max-width: 15.7rem;
+      max-height: 20.7rem;
+    }
+
+    & .kit-showcase {
+      position: absolute;
+      top: 0;
+
+      width: 100%;
+      height: 100%;
+
+      z-index: -1;
+
+      & img {
+        position: absolute;
+      }
+
+      & .hardcover-showcase {
+        & .arrow-1 {
+          max-width: 9rem;
+
+          transform: translate(10px, 25px);
+        }
+      }
+
+      & .pin-showcase {
+        & .arrow-2 {
+          max-width: 8rem;
+          transform: translate(12px, 155px);
+        }
+
+        & .pin {
+          max-width: 7.5rem;
+          transform: translate(40px, 205px) rotate(-4deg);
+        }
+      }
+
+      & .bookmark-showcase {
+        & .bookmark-yellow {
+          max-width: 5.8rem;
+          height: 18rem;
+
+          transform: translate(227px, 25px) rotate(12deg);
+        }
+
+        & .bookmark-purple {
+          max-width: 5.8rem;
+          height: 18rem;
+
+          transform: translate(264px, 58px) rotate(22deg);
+          z-index: -1;
+        }
+
+        & .arrow-3 {
+          max-width: 11.1rem;
+
+          transform: translate(202px, 230px);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  #showcase {
+    padding-block: 23.5rem 27.8rem;
+
+    & header {
+      margin: 0 auto 8.8rem;
+
+      & h2 {
+        gap: 1.6rem;
+        margin-bottom: 0.4rem;
+
+        & .i-star {
+          width: 3.2rem;
+          height: 3.2rem;
+        }
+      }
+    }
+
+    & .book-kit {
+      & .book-showcase-image {
+        margin: 13.4rem auto 16.9rem 47.3rem;
+
+        max-width: 46.7rem;
+        max-height: 61.7rem;
+      }
+
+      & .kit-showcase {
+        z-index: -1;
+
+        & .kit-transition {
+          transition: transform 600ms;
+        }
+
+        & .hardcover-showcase {
+          & .arrow1-desktop {
+            max-width: 25.4rem;
+
+            transform: translate(550px, 280px);
+          }
+        }
+
+        & .pin-showcase {
+          & .arrow2-desktop {
+            max-width: 12.6rem;
+
+            transform: translate(550px, 370px);
+          }
+
+          & .pin {
+            max-width: 22.2rem;
+
+            transform: translate(550px, 470px);
+          }
+        }
+
+        & .bookmark-showcase {
+          & .bookmark-yellow {
+            max-width: 17.2rem;
+            height: 53.6rem;
+
+            transform: translate(700px, 200px);
+          }
+
+          & .bookmark-purple {
+            max-width: 17.2rem;
+            height: 53.6rem;
+
+            transform: translate(700px, 200px);
+
+            z-index: -2;
+          }
+
+          & .arrow3-desktop {
+            max-width: 23.4rem;
+
+            transform: translate(600px, 400px);
+          }
+        }
+      }
+    }
+
+    &:hover {
+      & .book-kit {
+        & .kit-transition {
+          opacity: 1;
+        }
+
+        & .hardcover-showcase {
+          & .arrow1-desktop {
+            transform: translate(256px, 80px);
+          }
+        }
+
+        & .pin-showcase {
+          & .arrow2-desktop {
+            transform: translate(270px, 460px);
+          }
+
+          & .pin {
+            transform: translate(333px, 580px) rotate(-8deg);
+          }
+        }
+
+        & .bookmark-showcase {
+          & .bookmark-yellow {
+            transform: translate(886px, 46px) rotate(12deg);
+          }
+
+          & .bookmark-purple {
+            transform: translate(1000px, 145px) rotate(22deg);
+          }
+
+          & .arrow3-desktop {
+            transform: translate(885px, 650px);
+          }
+        }
+      }
+    }
+  }
+}

@@ -51,42 +51,24 @@
     }
 
     & .magic-book {
-      background: url(../assets/icons/hero/book-mobile.png) no-repeat top /
+      background: url(../../assets/icons/hero/book-mobile.png) no-repeat top /
         cover;
 
       transform: translateY(-40px) translateX(71px);
     }
 
     & .ouija {
-      background: url(../assets/icons/hero/ouija-mobile.png) no-repeat top /
+      background: url(../../assets/icons/hero/ouija-mobile.png) no-repeat top /
         cover;
 
       transform: translateY(-15px) translateX(-170px);
     }
 
     & .crystal-cake {
-      background: url(../assets/icons/hero/ball-mobile.png) no-repeat top /
+      background: url(../../assets/icons/hero/ball-mobile.png) no-repeat top /
         cover;
 
       transform: translateY(-5px) translateX(120px);
-    }
-  }
-}
-
-#showcase {
-  max-width: 144rem;
-  margin-inline: auto;
-
-  border: solid red;
-
-  & header {
-    text-align: center;
-
-    & i.i-star {
-      width: 3.2rem;
-      height: 3.2rem;
-
-      background: url(../assets/icons/star.svg);
     }
   }
 }
@@ -109,7 +91,7 @@
         max-width: 65.6rem;
 
         opacity: 0.2;
-        animation: fade-in 600ms 600ms both;
+        animation: fade-in 600ms 1.2s both;
 
         & p {
           display: inline-block;
@@ -118,8 +100,8 @@
       }
 
       & .bg-hero {
-        opacity: 0.2;
-        animation: fade-in 600ms 200ms both;
+        opacity: 0;
+        animation: fade-in 3s both;
       }
     }
 
@@ -158,21 +140,21 @@
       }
 
       & .magic-book {
-        background: url(../assets/icons/hero/book.png) no-repeat top / cover;
+        background: url(../../assets/icons/hero/book.png) no-repeat top / cover;
 
         top: 12px;
         left: 650px;
       }
 
       & .ouija {
-        background: url(../assets/icons/hero/ouija.png) no-repeat top / cover;
+        background: url(../../assets/icons/hero/ouija.png) no-repeat top / cover;
 
         top: 210px;
         left: 150px;
       }
 
       & .crystal-cake {
-        background: url(../assets/icons/hero/ball.png) no-repeat top / cover;
+        background: url(../../assets/icons/hero/ball.png) no-repeat top / cover;
 
         top: 210px;
         left: 1230px;

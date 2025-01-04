@@ -42,6 +42,12 @@ body {
     top / cover;
 }
 
+img {
+  display: inline-block;
+  object-fit: cover;
+  width: 100%;
+}
+
 .container {
   max-width: 37.5rem;
   margin-inline: auto;
