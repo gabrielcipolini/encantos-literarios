@@ -34,7 +34,12 @@
               />
             </div>
 
-            <a href="#plans" data-label="Assinar" class="btn btn-primary"></a>
+            <a
+              href="#plans"
+              data-label="Assinar"
+              aria-label="Assinar"
+              class="btn btn-primary"
+            ></a>
           </nav>
 
           <header>
@@ -169,11 +174,119 @@
       </section>
 
       <section id="plans">
-        <header>
-          <h2 class="title-sm">Assinatura Encantos Literários</h2>
-        </header>
+        <h2 class="title-sm">Assinatura Encantos Literários</h2>
 
-        <div class="pricing-plans"></div>
+        <div class="pricing-plans">
+          <div class="cards monthly">
+            <header>
+              <h3 id="monthly-plan" class="title-xs">Mensal</h3>
+
+              <div class="pricing">
+                <p class="price title-md">
+                  R$ 59,90<small class="title-xs">/mês</small>
+                </p>
+
+                <span class="body-sm">R$ 718,80 por ano</span>
+              </div>
+            </header>
+
+            <div class="cta-section">
+              <ul role="list" aria-labelledby="monthly-plan">
+                <li>Kit mensal com livro temático</li>
+                <li>Broche e marca páginas exclusivo</li>
+                <li>Acesso à comunidade literária</li>
+              </ul>
+
+              <a
+                href="#plans"
+                aria-label="Assinar mensal"
+                class="btn btn-secondary"
+              ></a>
+            </div>
+          </div>
+
+          <div class="cards annual">
+            <header>
+              <h3 id="annual-plan" class="title-xs">Anual</h3>
+
+              <div class="pricing">
+                <p class="price title-md">
+                  R$ 48,90<small class="title-xs">/mês</small>
+                </p>
+                <span class="body-sm">R$ 586,80 por ano</span>
+              </div>
+            </header>
+
+            <div class="cta-section">
+              <ul role="list" aria-labelledby="annual-plan">
+                <li>
+                  <i class="stars star-popular"></i>
+                  Kit mensal com livro temático
+                </li>
+
+                <li>
+                  <i class="stars star-regular"></i>
+                  Broche e marca páginas exclusivo
+                </li>
+
+                <li>Acesso à comunidade literária</li>
+
+                <li>Membro premium do clube</li>
+
+                <li>Planner anual de leituras</li>
+              </ul>
+
+              <a
+                href="#plans"
+                aria-label="Assinar anual"
+                class="btn btn-secondary"
+              ></a>
+            </div>
+          </div>
+
+          <div class="cards biannual">
+            <header>
+              <h3 id="biannual-plan" class="title-xs">Semestral</h3>
+
+              <div class="pricing">
+                <p class="price title-md">
+                  R$ 52,90<small class="title-xs">/mês</small>
+                </p>
+
+                <span class="body-sm">R$ 634,80 por ano</span>
+              </div>
+            </header>
+
+            <div class="cta-section">
+              <ul role="list" aria-labelledby="biannual-plan">
+                <li>Kit mensal com livro temático</li>
+                <li>Broche e marca páginas exclusivo</li>
+                <li>Acesso à comunidade literária</li>
+                <li>Membro premium do clube</li>
+              </ul>
+
+              <a
+                href="#plans"
+                aria-label="Assinar semestral"
+                class="btn btn-primary popular-plan"
+              ></a>
+            </div>
+          </div>
+
+          <div class="stars-decorative">
+            <div class="s-left">
+              <i class="i-stars star-lg"></i>
+
+              <i class="i-stars star-sm"></i>
+            </div>
+
+            <div class="s-right">
+              <i class="i-stars star-lg"></i>
+
+              <i class="i-stars star-sm"></i>
+            </div>
+          </div>
+        </div>
       </section>
 
       <footer>

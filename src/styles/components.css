@@ -61,7 +61,7 @@ a.btn {
   }
 
   &::after {
-    content: attr(data-label);
+    content: attr(aria-label);
     position: relative;
   }
 

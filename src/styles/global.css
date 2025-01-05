@@ -37,6 +37,10 @@
   --text-label: #bac6c9;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--shape-background) url(../assets/img/bg-blur.svg) no-repeat
     top / cover;
@@ -46,6 +50,10 @@ img {
   display: inline-block;
   object-fit: cover;
   width: 100%;
+}
+
+ul[role="list"] {
+  list-style-type: none;
 }
 
 .container {

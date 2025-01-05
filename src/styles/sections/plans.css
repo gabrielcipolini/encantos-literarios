@@ -1,0 +1,338 @@
+#plans {
+  display: grid;
+  gap: 4.8rem;
+
+  margin-inline: auto;
+  max-width: 144rem;
+  padding-block: 10.4rem;
+
+  overflow: auto;
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  & h2 {
+    max-width: 22.1rem;
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  & .pricing-plans {
+    backface-visibility: hidden;
+    will-change: transform;
+
+    display: grid;
+    grid-template-areas: "A B C";
+    gap: 1.6rem;
+
+    margin-left: 4.4rem;
+    overflow-y: auto;
+    width: fit-content;
+
+    & .cards {
+      display: grid;
+      place-content: space-between;
+
+      background-color: var(--shape-base);
+      border: 1px solid var(--shape-stroke);
+      border-radius: 2.4rem;
+
+      padding: 3.2rem 3.2rem 2.8rem;
+
+      height: 40rem;
+      width: 28rem;
+
+      position: relative;
+
+      & header {
+        display: grid;
+        gap: 2.4rem;
+
+        text-align: start;
+
+        & .pricing {
+          display: grid;
+          gap: 0.8rem;
+        }
+      }
+
+      & .cta-section {
+        display: grid;
+        gap: 2.4rem;
+
+        & ul {
+          display: grid;
+          gap: 1.2rem;
+
+          & li {
+            display: flex;
+            align-items: center;
+
+            font: var(--regular) 1.2rem / var(--line-base) var(--ff-raleway);
+
+            &::before {
+              content: "";
+              width: 16px;
+              height: 16px;
+              background: url(../../assets/icons/star-blue.svg) no-repeat center /
+                cover;
+              margin-right: 8px;
+            }
+          }
+        }
+      }
+    }
+
+    & .cards:has(a[class="btn btn-primary popular-plan"]) {
+      background-color: var(--shape-hover);
+      grid-area: B;
+
+      &::before {
+        content: "Popular";
+        background-color: var(--shape-stroke);
+        border-radius: 99rem;
+        font: var(--bold) 1rem / var(--line-base) var(--ff-raleway);
+        text-transform: uppercase;
+        padding: 0.8rem 2rem;
+
+        position: absolute;
+        top: 2.4rem;
+        right: 2.4rem;
+      }
+
+      & header {
+        & h3 {
+          color: var(--pink-light);
+        }
+      }
+
+      & .cta-section {
+        & ul li::before {
+          background: url(../../assets/icons/star.svg) no-repeat center / cover;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  #plans {
+    gap: 5.6rem;
+    padding-block: 19.4rem 30.2rem;
+
+    overflow: hidden;
+
+    & h2 {
+      max-width: 29.4rem;
+    }
+
+    & .pricing-plans {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0;
+
+      width: 105rem;
+      height: 65rem;
+      margin-inline: auto;
+
+      overflow: hidden;
+
+      position: relative;
+
+      & .cards {
+        height: 41.6rem;
+        width: 28.8rem;
+
+        transition: transform 600ms, box-shadow 600ms;
+
+        /* backface-visibility: hidden;
+        will-change: transform; */
+      }
+
+      & .cards:has(a[class="btn btn-primary popular-plan"]) {
+        position: absolute;
+
+        &::after {
+          content: "";
+          width: 4.5rem;
+          height: 5rem;
+
+          background: url(../../assets/icons/bunny.svg);
+
+          position: absolute;
+          top: -50px;
+          left: 32px;
+
+          z-index: -1;
+        }
+      }
+
+      & .cards:has(a[class="btn btn-secondary"]) {
+        position: absolute;
+      }
+
+      & .stars-decorative {
+        & .i-stars {
+          background: url(../../assets/icons/star.svg) no-repeat top / cover;
+
+          position: absolute;
+
+          transition: transform 600ms;
+
+          z-index: -1;
+        }
+
+        & .s-left {
+          transition: top 600ms, left 600ms;
+
+          position: absolute;
+
+          top: 75px;
+          left: 330px;
+
+          width: 5rem;
+          height: 8rem;
+
+          /* border: solid red; */
+
+          & .star-lg {
+            width: 2.6rem;
+            height: 2.6rem;
+          }
+
+          & .star-sm {
+            width: 1.3rem;
+            height: 1.3rem;
+
+            top: 40px;
+            left: 0;
+          }
+        }
+
+        & .s-right {
+          transition: right 600ms, bottom 600ms;
+
+          position: absolute;
+
+          right: 400px;
+          bottom: 75px;
+
+          & .star-lg {
+            width: 2.3rem;
+            height: 2.3rem;
+
+            left: 30px;
+          }
+
+          & .star-sm {
+            width: 1.1rem;
+            height: 1.1rem;
+
+            top: 12px;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+
+  /* hover */
+  #plans {
+    & .pricing-plans {
+      &:hover {
+        & .cards {
+          &:hover {
+            box-shadow: 0px 0px 66px rgba(53, 139, 185, 0.2);
+          }
+        }
+
+        & .monthly {
+          transform: translate(-285px, 60px) rotate(-8deg);
+
+          &:hover {
+            background-color: var(--shape-hover);
+            transform: translate(-285px, 50px) rotate(-8deg);
+
+            z-index: 1;
+
+            & ~ .biannual {
+              background-color: var(--shape-base);
+              transform: translate(0px, 0px);
+            }
+
+            & ~ .annual {
+              background-color: var(--shape-base);
+            }
+
+            & ~ .stars-decorative {
+              & .s-left {
+                & .star-lg {
+                  transform: rotate(-16deg);
+                }
+
+                & .star-sm {
+                  transform: rotate(16deg);
+                }
+              }
+            }
+          }
+        }
+
+        & .annual {
+          transform: translate(285px, 60px) rotate(8deg);
+
+          &:hover {
+            background-color: var(--shape-hover);
+            transform: translate(285px, 50px) rotate(8deg);
+
+            z-index: 1;
+
+            & ~ .monthly {
+              background-color: var(--shape-base);
+            }
+
+            & ~ .biannual {
+              background-color: var(--shape-base);
+              transform: translate(0px, 0px);
+            }
+
+            & ~ .stars-decorative {
+              & .s-right {
+                & .star-lg {
+                  transform: rotate(16deg);
+                }
+
+                & .star-sm {
+                  transform: rotate(-16deg);
+                }
+              }
+            }
+          }
+        }
+
+        & .biannual {
+          &:hover {
+            transform: translate(0, -10px);
+          }
+        }
+
+        & .stars-decorative {
+          & .s-left {
+            top: 168px;
+            left: 40px;
+          }
+
+          & .s-right {
+            right: 140px;
+            bottom: 45px;
+          }
+        }
+      }
+    }
+  }
+}

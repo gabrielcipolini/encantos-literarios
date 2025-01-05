@@ -6,8 +6,8 @@
 
   /* size */
   --fs-title-lg: 2.8rem;
-  --fs-subtitle: 1.6rem;
   --fs-title-sm: 2.4rem;
+  --fs-subtitle: 1.6rem;
   --fs-body-lg: 1.4rem;
   --fs-body-md: 1.4rem;
 
@@ -31,19 +31,33 @@ body {
   font: var(--bold) var(--fs-title-lg) / var(--line-base) var(--ff-raleway);
 }
 
-.subtitle {
-  font: var(--medium) var(--fs-subtitle) / var(--line-base) var(--ff-raleway);
+.title-md {
+  color: var(--text-title);
+  font: var(--bold) 4rem / var(--line-base) var(--ff-raleway);
 }
 
 .title-sm {
   font: var(--bold) var(--fs-title-sm) / var(--line-base) var(--ff-raleway);
 }
 
+.title-xs {
+  font: var(--bold) 1.6rem / var(--line-base) var(--ff-raleway);
+}
+
+.subtitle {
+  font: var(--medium) var(--fs-subtitle) / var(--line-base) var(--ff-raleway);
+}
+
 .body-lg {
   font: var(--regular) var(--fs-body-lg) / var(--line-base) var(--ff-raleway);
 }
 
-.text-button {
+.body-sm {
+  color: var(--text-label);
+  font: var(--regular) 1.4rem / var(--line-base) var(--ff-raleway);
+}
+
+.btn {
   color: var(--text-title);
   font: var(--bold) 1.4rem / var(--line-base) var(--ff-raleway);
 }
