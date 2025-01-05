@@ -1,5 +1,5 @@
 footer {
-  background: url(/src/assets/img/bg-footer-mobile.svg) no-repeat top / cover;
+  background: url(../assets/img/bg-footer-mobile.svg) no-repeat top / cover;
 
   padding: 9.8rem 3.2rem 3.8rem;
 
@@ -52,7 +52,7 @@ footer {
 
 @media (min-width: 1440px) {
   footer {
-    background-image: url(/src/assets/img/bg-footer.svg);
+    background-image: url(../assets/img/bg-footer.svg);
 
     padding: 0;
 
