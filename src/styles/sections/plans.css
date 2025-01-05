@@ -3,10 +3,11 @@
   gap: 4.8rem;
 
   margin-inline: auto;
-  max-width: 144rem;
+  max-width: 256rem;
   padding-block: 10.4rem;
 
   overflow: auto;
+  position: relative;
 
   scrollbar-width: none;
   -ms-overflow-style: none;
@@ -125,6 +126,22 @@
     padding-block: 19.4rem 30.2rem;
 
     overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 70rem;
+      height: 70rem;
+
+      left: 50%;
+      top: 50%;
+
+      transform: translate(-50%, -50%);
+
+      background: #000f1f;
+      filter: blur(284px);
+      z-index: -1;
+    }
 
     & h2 {
       max-width: 29.4rem;

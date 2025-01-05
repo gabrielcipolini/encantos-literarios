@@ -75,6 +75,8 @@
 
 @media (min-width: 1440px) {
   #hero {
+    padding-bottom: 8rem;
+
     & .hero-content {
       padding-top: 5.6rem;
       padding-bottom: 56.6rem;
@@ -106,9 +108,9 @@
     }
 
     .section-subtitle {
-      margin: 9.6rem auto 8rem;
+      margin: 9.6rem auto 0;
       max-width: 144rem;
-      padding: 11.4rem 3.2rem;
+      padding: 11.4rem 3.2rem 15.8rem;
 
       & h2.desktop-only {
         display: inline-block;

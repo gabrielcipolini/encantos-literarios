@@ -1,8 +1,7 @@
 #showcase {
-  max-width: 144rem;
   margin-inline: auto;
 
-  padding-block: 10.4rem 8.8rem;
+  padding-block: 10.4rem 10.4rem;
 
   & header {
     margin: 0 3.2rem 6.4rem;
@@ -96,6 +95,8 @@
 @media (min-width: 1440px) {
   #showcase {
     padding-block: 23.5rem 27.8rem;
+
+    max-width: 144rem;
 
     & header {
       margin: 0 auto 8.8rem;
